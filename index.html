@@ -668,6 +668,141 @@
   .sc-courier{animation:sc-courier 3.6s ease-in-out infinite alternate;transform-box:fill-box;}
   .sc-win{animation:sc-win 2.6s ease-in-out infinite;}
 
+  /* =========================================
+     MOBILE RESPONSIVENESS OVERRIDES (<640px)
+     ========================================= */
+  @media (max-width: 640px) {
+    /* 1. Viewport & Container Spacing */
+    .wrap {
+      padding: 0 14px;
+    }
+    section {
+      padding: 32px 0;
+    }
+    .hero .wrap {
+      padding: 36px 14px 20px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 9vw, 44px);
+      line-height: 1.05;
+    }
+
+    /* 2. Topbar & Navigation Rail */
+    .topbar .wrap {
+      height: 50px;
+    }
+    .brand {
+      font-size: 13.5px;
+    }
+    .brandlogo {
+      width: 24px;
+      height: 24px;
+    }
+    .chaprail {
+      top: 50px;
+      padding: 6px 0;
+    }
+    .crpill {
+      font-size: 10px;
+      padding: 5px 10px;
+    }
+
+    /* 3. Grid Collapses to Single Column */
+    .launch,
+    .msgrid,
+    .uc-grid,
+    .vgrid,
+    .news-grid,
+    .persona-grid,
+    .twocol,
+    .m-grid,
+    .cowall,
+    .about-do,
+    .about-grps,
+    .about-two,
+    .gloss,
+    ul.metrics {
+      grid-template-columns: 1fr !important;
+      gap: 12px;
+    }
+
+    .counters {
+      grid-template-columns: 1fr 1fr !important;
+    }
+    .counter {
+      padding: 16px 12px;
+    }
+
+    /* 4. Horizontal Flow & Scene Handling */
+    .flow-scroll {
+      margin: 0 -14px;
+      padding: 8px 14px 16px;
+    }
+    .scene {
+      border-radius: 12px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .scene svg {
+      min-width: 700px;
+      height: auto;
+    }
+
+    /* 5. Mode Cards & Data Rows */
+    .mode-facts,
+    .mini-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .geo-row {
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+    .geo-row .gname {
+      width: 100%;
+    }
+    .geo-row .geo-bar {
+      flex: 1;
+    }
+
+    /* 6. Modal / Popup Dialogs */
+    .overlay {
+      padding: 16px 10px;
+      align-items: center;
+    }
+    .modal {
+      border-radius: 14px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal .mh {
+      padding: 16px 18px;
+    }
+    .modal .mb {
+      padding: 16px 18px;
+    }
+    .modal .mrow {
+      flex-direction: column;
+    }
+
+    /* 7. About Hero Card */
+    .about-hero {
+      padding: 20px 16px;
+    }
+    .about-id {
+      gap: 16px;
+    }
+    .about-avatar {
+      width: 80px;
+      height: 80px;
+    }
+    .about-mono {
+      font-size: 28px;
+    }
+    .about-name {
+      font-size: 24px;
+    }
+  }
 </style>
 </head>
 <body>
